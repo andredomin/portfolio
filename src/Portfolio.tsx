@@ -3,7 +3,7 @@ import { faPaperPlane, faPaperclip, faCakeCandles } from '@fortawesome/free-soli
 import Toggler from './Toggler'
 
 const Portfolio: React.FC = () => {
-  const profilePath = '../public/img/profile-pic.jpeg'
+  const profilePath = 'img/profile-pic.jpeg'
   return (
       <>
         <div className="navbar">
