@@ -12,6 +12,36 @@ body{
   background-color: $bg-color;
 }
 
+
+
+
+
+
+.eye1{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-left: 16vw;
+  margin-right: 15vw;
+  top: 4vh;
+  border-radius: 50%;
+  background-color: white;
+  animation: movingeyes 5s infinite;
+}
+
+.eye2{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-left: 34vw;
+  margin-right: 15vw;
+  top: 1vh;
+  border-radius: 50%;
+  background-color: white;
+  animation: movingeyes2 5s infinite;
+}
+
+
 h1, h2{
   color: $primary-color;
     
@@ -46,7 +76,8 @@ h1{
 
 .header-container{
   position: relative;
-  background-color: $primary-color;
+  background-image: url(/img/pikachu.png);
+  background-position: center;
   margin-top: 5vh;
   width: 53vw;
   height: 43vh;
@@ -173,14 +204,20 @@ a:hover{
   font-weight: bold;
 }
 
+@font-face {
+  font-family: Pokemon_GB;
+  src: url(./fonts/Pokemon_GB.ttf);
+}
+
 .tab-container{
+  font-family: 'Pokemon_GB';
   margin-top: 15vh;
-  margin-left: 1vw;
+  margin-left: -3vw;
 
 }
 .feed, .work, .about, .labs{
   margin-top: 15vh;
-  margin-left: 8vw;
+  margin-left: 6.5vw;
   font-size: 20px;
   font-weight: 400;
 }
@@ -327,6 +364,57 @@ li::before{
       margin-left: 1vw;
     }
 }
+
+@keyframes movingeyes {
+  0%{
+      margin-left: 16vw ;
+  }
+  50%{
+    margin-left: 18vw;
+  }
+}
+
+@keyframes movingeyes2 {
+  0%{
+      margin-left: 34vw ;
+  }
+  50%{
+    margin-left: 36vw;
+  }
+  100%{
+    margin-left: 34vw;
+  }
+}
+
+// Work tab
+.mywork-title{
+  position: relative;
+  top: 10vh;
+  left: 16vw;
+}
+
+.smartspendr-title{
+  position: relative;
+  top: 37vh;
+  left: 14.5vw;
+  color: white;
+
+}
+
+.lablue-title{
+  position: relative;
+  top: 73vh;
+  left: 14.5vw;
+  color: white;
+}
+
+.pawcare-title{
+  position: relative;
+  top: 117vh;
+  left: 14.5vw;
+  color: white;
+}
+
 
 
 // Media queries
@@ -480,6 +568,27 @@ li::before{
     margin-top: 2vh;
     margin-left: 6vw;
 
+  }
+
+  @keyframes movingeyes {
+    0%{
+        margin-left: 16vw ;
+    }
+    50%{
+      margin-left: 18vw;
+    }
+  }
+  
+  @keyframes movingeyes2 {
+    0%{
+        margin-left: 36vw ;
+    }
+    50%{
+      margin-left: 34vw;
+    }
+    100%{
+      margin-left: 36vw;
+    }
   }
 }
 

@@ -3,7 +3,7 @@ import { faPaperPlane, faPaperclip, faCakeCandles } from '@fortawesome/free-soli
 import Toggler from './Toggler'
 
 const Portfolio: React.FC = () => {
-  const profilePath = '../public/img/profile-pic.jpeg'
+  const profilePath = '/img/profile-pic.jpeg'
   return (
       <>
         <div className="navbar">
@@ -11,7 +11,7 @@ const Portfolio: React.FC = () => {
         </div>
         <div className="container main-container">
         <div className="circle"><img className="profile" src={profilePath}/></div>
-            <div className="container header-container"></div>
+            <div className="container header-container"><div className="eyes"><div className="eye1"></div><div className="eye2"></div></div></div>
             <h1 className="title title-container">Andres D. ⚡</h1>
             <h3 className="description title-container">Geek of web development 💻, AI 🚀 and cybersecurity 🛡️.</h3>
             <h3 className="description title-container description-second-line">Full-stack Developer.</h3>

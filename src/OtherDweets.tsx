@@ -63,8 +63,8 @@ const OtherDweets: React.FC = () => {
       btnprop={btnprop2}
     />
     <Dweets
-      pathImage="../public/img/antibiotic.jpeg"
-      pathImage2="../public/img/profile-pic.jpeg"
+      pathImage="/img/antibiotic.jpeg"
+      pathImage2="/img/profile-pic.jpeg"
       date="16 Jan 24"
       dweetTitle="AI discovers new class of antibiotics to kill drug-resistant bacteria"
       tags={tagsantibiotic}

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Dweet from './Dweet'
 import OtherDweets from './OtherDweets'
 import ThatsAll from './ThatsAll'
+import Work from './Work'
 
 interface TabProps {
   tabNumber: number
@@ -41,7 +42,7 @@ const TabsExample: React.FC = () => {
       </Tab>
 
       <Tab tabNumber={2}>
-        {activeTab === 2 && <div className='contenido-tab'></div>}
+        {activeTab === 2 && <div className='contenido-tab'><Work /></div>}
       </Tab>
 
       <Tab tabNumber={3}>

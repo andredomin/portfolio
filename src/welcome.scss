@@ -1,23 +1,219 @@
 @import 'variables';
 @import 'normalize';
 
-.body{
-    background-color: $primary-color;
-    width: 50vw;
-    height: 100vh;
+@font-face {
+    font-family: Pokemon_GB;
+    src: url(./fonts/Pokemon_GB.ttf);
 }
+
 
 .portfolio{
-    margin-top: -40vh;
-    margin-left: 40vw;
-    margin-right: 33vw;
-    h2{
-        font-size: 50px;
-        color: $primary-color;
-    }
+    font-family: 'Pokemon_GB';
+    margin-left: 30vw;
+    margin-top: 50vh;
+}
 
-    span{
-        color: $bg-color;
+.portfolio a{
+    color: $primary-color;
+    animation: blink-game 1s infinite;
+    
+}
+
+.gifcontainer{
+    position: absolute;
+    margin-top: -10vh;
+}
+
+.gif{
+    height: 63vh;
+    position: relative;
+    margin-top: -6vh;
+    margin-left: 50vw;
+    animation: gif-anim 10s forwards;
+}
+
+.charizard{
+    height: 53vh;
+    position: absolute;
+    margin-top: -8vh;
+    margin-left: 50vw;
+    animation: gif-anim2 20s forwards;
+}
+
+.line-1 h1{
+    color: white;
+    font-family: 'Pokemon_GB';
+    font-size: 15px;
+    font-weight: 100;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 20vw;
+    margin-top: 20vh;
+    animation: blinking 2.5s steps(20,end)
+}
+
+.line-2, .line-3{
+ display: none;
+}
+
+@keyframes blinking {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 50%;
     }
 }
 
+
+
+
+@keyframes gif-anim{
+    0%{
+        margin-left: 100vw;
+    }
+
+    100%{
+        margin-left: -110vw;
+    }
+}
+
+@keyframes gif-anim2{
+    0%{
+        margin-left: 100vw;
+    }
+
+    100%{
+        margin-left: -110vw;
+    }
+}
+
+@keyframes blink-game {
+    0%{
+        opacity: 1;
+    }
+    
+    
+    50%{
+        opacity: 0;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    body {
+        overflow: hidden;
+        width: 100vw;
+    }
+    
+
+    .portfolio{
+        margin-left: 20vw;
+    }
+
+    .line-1 h1 {
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 25px;
+        width: 97vw;
+    }
+
+    .line-2,
+    .line-3 {
+        display: block;
+        color: white;
+        font-family: 'Pokemon_GB';
+        font-size: 10px;
+        font-weight: 100;
+        overflow: hidden;
+        white-space: nowrap;
+        
+        margin-top: 2vh;
+        
+    }
+
+    .line-1{
+        animation: blinking .75s steps(40,end);
+    }
+    .line-2{
+        animation: blinking 3.5s steps(40,end)
+    }
+
+    .line-3{
+        animation: blinking 4.5s steps(50,end)
+    }
+
+    .line-2 h1{
+        color: white;
+        margin-left: 25vw;
+        font-size: 14px;
+    }
+
+    .line-3 h1{
+        color: white;
+        margin-left: 25vw;
+        font-size: 17px;
+    }
+    .gif {
+        height: 33vh;
+        position: relative;
+        margin-top: 6vh;
+        margin-left: 4vw;
+        animation: gif-anim 6s forwards;
+    }
+    .gifcontainer{
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .charizard {
+        width: 100%;
+        height: 23vh;
+        position: relative;
+        margin-top: 2vh;
+        margin-right: 25vw;
+        animation: gif-anim2 15s forwards;
+    }
+
+    .charizard-container{
+        width: 100%;
+        margin-left: 15vw ;
+        position: absolute;
+        overflow: hidden;
+    }
+
+
+    @keyframes blinking {
+        from{
+            width: 0%;
+        }
+        to{
+            width: 100%;
+        }
+    }
+    @keyframes gif-anim{
+        0%{
+            margin-left: 50vw;
+            
+        }
+    
+        100%{
+            margin-left: -90vw;
+            
+        }
+    }
+
+    @keyframes gif-anim2{
+        0%{
+            margin-left: 110vw;
+        }
+    
+        100%{
+            margin-left: -100vw;
+            
+        }
+    }
+
+    
+    
+}
