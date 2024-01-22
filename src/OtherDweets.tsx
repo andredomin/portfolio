@@ -54,8 +54,8 @@ const OtherDweets: React.FC = () => {
   return (
     <>
     <Dweets
-      pathImage='../public/img/toools.jpeg'
-      pathImage2='../public/img/profile-pic.jpeg'
+      pathImage='/img/toools.jpeg'
+      pathImage2='/img/profile-pic.jpeg'
       date='16 Jan 24'
       dweetTitle='A stunning resource for designers and programmers.'
       tags={tagsresource}

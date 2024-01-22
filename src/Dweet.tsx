@@ -2,8 +2,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapPin } from '@fortawesome/free-solid-svg-icons'
 const Dweet: React.FC = () => {
-  const pathImage = '../public/img/dweet.jpeg'
-  const pathImage2 = '../public/img/profile-pic.jpeg'
+  const pathImage = '/img/dweet.jpeg'
+  const pathImage2 = '/img/profile-pic.jpeg'
   return (
     <div className="dweet dweet-spinned">
         <img className="mini-profile" src={pathImage2} alt="profile-mini" />
