@@ -418,7 +418,7 @@ li::before{
 
 
 // Media queries
-@media screen and (min-width:300px) {
+@media screen and (min-width:300px) and (max-width: 380px) {
   body{
     width: 100vw;
     height: 100vh;
@@ -434,7 +434,7 @@ li::before{
     width: 20px;
     height: 20px;
     left: -2vw;
-    top: 5vh;
+    top: 6vh;
     border-radius: 50%;
     background-color: white;
     animation: movingeyes 5s infinite;
@@ -445,7 +445,219 @@ li::before{
     width: 20px;
     height: 20px;
     left: 45vw;
-    top: 2.5vh;
+    top: 3.5vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes2 5s infinite;
+  }
+
+  .main-container{
+    margin-left: 0;
+    width: 100vw;
+  }
+  .header-container{
+      width: 100vw;
+  }
+
+  .profile{
+    position: relative;
+    left: 0.5vw;
+    bottom: 0.20vh;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .circle{
+    position: absolute;
+    top: 15vh;
+  }
+
+  .title-container{
+    margin-top: 8vh;
+  }
+
+  .description{
+    margin-top: -2vh;
+  }
+  
+  .description-second-line{
+    margin-top: 3vh;
+  }
+
+  .plane{
+    position: absolute;
+    margin-left: 6vw;
+    margin-top: 1vh;
+  }
+  
+  .available{
+    width: 100px;
+    margin-top: 3vh;
+    margin-left: 13vw;
+    color:  rgb(236, 206, 40);
+  }
+  
+  #connected{
+    color: green;
+  }
+  
+  .social{
+    position: absolute;
+    margin-top: -4.5vh;
+    margin-left: 40%;
+    color:  rgba(236, 206, 40, 0.527);
+  }
+  
+  .links{
+    margin-top: -4.5vh;
+    margin-left: 45vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+       
+  }
+  
+  .links:hover{
+    color: rgb(236, 206, 40);
+    cursor: pointer;
+  }
+  
+  .birthday{
+    position: absolute;
+    margin-top: -4vh;
+    margin-left: 70vw;
+  }
+  
+  .birth{
+    margin-top: -4vh;
+    margin-left: 75vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+  
+  }
+
+  .tab-container{
+    width: 100vw;
+  }
+
+  .tab{
+    font-size: 14px;
+    margin-left: 8vw;
+  }
+
+  .contenido-tab{
+    margin-top: 3vh;
+    margin-left: 0vw;
+    width: 100vw;
+    height: 510vh;
+    background-color: $primary-color;
+  }
+
+  .dweet{
+    width: 90%;
+    height: 120vh;
+  }
+
+  .dwimg{
+    margin-left: 10vw;
+  }
+
+  .dweet-title{
+    margin-top: 3vh;
+    width: 90%;
+  }
+  .dweetp{
+    margin-top: 1vh;
+  }
+  .user-profile{
+    margin-left: 17vw;
+    margin-top: -6vh;
+
+  }
+
+  .tag{
+    width: 24vw;
+    height: 1vh;
+  }
+
+  .spinned{
+    margin-top: -15vh;
+    margin-bottom: 9vh;
+  }
+
+  .btn{
+    margin-left: 15vw;
+  }
+
+  li::before{
+    content: "\2022";
+    color: $primary-color;
+    font-weight: bold;
+    display: inline-block;
+    width: 1vw;
+    margin-bottom: -1vw;
+    margin-right: 3vw;
+  }
+  #all h4{
+    margin-left: 4vw;
+  }
+  #all h5{
+    margin-top: 2vh;
+    margin-left: 6vw;
+
+  }
+
+  @keyframes movingeyes {
+    0%{
+        left: -4vw ;
+    }
+    50%{
+      left: 2vw;
+    }
+
+    100%{
+      left: -4vw;
+    }
+  }
+  
+  @keyframes movingeyes2 {
+    0%{
+        left: 44vw ;
+    }
+    50%{
+      left: 48vw;
+    }
+    100%{
+      left: 44vw;
+    }
+  }
+}
+
+@media screen and (min-width:380px) and (max-width: 400px) {
+  body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden
+  }
+
+  .eyes{
+    width: 100vw;
+  }
+
+  .eye1{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 8vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes 5s infinite;
+  }
+  
+  .eye2{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 6vh;
     border-radius: 50%;
     background-color: white;
     animation: movingeyes2 5s infinite;
@@ -613,17 +825,234 @@ li::before{
     50%{
       left: 4vw;
     }
+
+    100%{
+      left: -2vw;
+    }
   }
   
   @keyframes movingeyes2 {
     0%{
-        left: 42vw ;
+        left: 40vw ;
     }
     50%{
-      left: 50vw;
+      left: 48vw;
     }
     100%{
-      left: 42vw;
+      left: 40vw;
+    }
+  }
+}
+
+@media screen and (min-width:400px) and (max-width: 500px) {
+  body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden
+  }
+
+  .eyes{
+    width: 100vw;
+  }
+
+  .eye1{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 4vw;
+    top: 10vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes 5s infinite;
+  }
+  
+  .eye2{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 8vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes2 5s infinite;
+  }
+
+  .main-container{
+    margin-left: 0;
+    width: 100vw;
+  }
+  .header-container{
+      width: 100vw;
+  }
+
+  .profile{
+    position: relative;
+    left: 0.5vw;
+    bottom: 0.20vh;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .circle{
+    position: absolute;
+    top: 15vh;
+  }
+
+  .title-container{
+    margin-top: 8vh;
+  }
+
+  .description{
+    margin-top: -2vh;
+  }
+  
+  .description-second-line{
+    margin-top: 3vh;
+  }
+
+  .plane{
+    position: absolute;
+    margin-left: 6vw;
+    margin-top: 1vh;
+  }
+  
+  .available{
+    width: 100px;
+    margin-top: 3vh;
+    margin-left: 13vw;
+    color:  rgb(236, 206, 40);
+  }
+  
+  #connected{
+    color: green;
+  }
+  
+  .social{
+    position: absolute;
+    margin-top: -4.5vh;
+    margin-left: 40%;
+    color:  rgba(236, 206, 40, 0.527);
+  }
+  
+  .links{
+    margin-top: -4.5vh;
+    margin-left: 45vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+       
+  }
+  
+  .links:hover{
+    color: rgb(236, 206, 40);
+    cursor: pointer;
+  }
+  
+  .birthday{
+    position: absolute;
+    margin-top: -4vh;
+    margin-left: 70vw;
+  }
+  
+  .birth{
+    margin-top: -4vh;
+    margin-left: 75vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+  
+  }
+
+  .tab-container{
+    width: 100vw;
+  }
+
+  .tab{
+    font-size: 14px;
+    margin-left: 8vw;
+  }
+
+  .contenido-tab{
+    margin-top: 3vh;
+    margin-left: 0vw;
+    width: 100vw;
+    height: 510vh;
+    background-color: $primary-color;
+  }
+
+  .dweet{
+    width: 90%;
+    height: 120vh;
+  }
+
+  .dwimg{
+    margin-left: 10vw;
+  }
+
+  .dweet-title{
+    margin-top: 3vh;
+    width: 90%;
+  }
+  .dweetp{
+    margin-top: 1vh;
+  }
+  .user-profile{
+    margin-left: 17vw;
+    margin-top: -6vh;
+
+  }
+
+  .tag{
+    width: 24vw;
+    height: 1vh;
+  }
+
+  .spinned{
+    margin-top: -15vh;
+    margin-bottom: 9vh;
+  }
+
+  .btn{
+    margin-left: 15vw;
+  }
+
+  li::before{
+    content: "\2022";
+    color: $primary-color;
+    font-weight: bold;
+    display: inline-block;
+    width: 1vw;
+    margin-bottom: -1vw;
+    margin-right: 3vw;
+  }
+  #all h4{
+    margin-left: 4vw;
+  }
+  #all h5{
+    margin-top: 2vh;
+    margin-left: 6vw;
+
+  }
+
+  @keyframes movingeyes {
+    0%{
+        left: 0vw ;
+    }
+    50%{
+      left: 8vw;
+    }
+
+    100%{
+      left: 0vw;
+    }
+  }
+  
+  @keyframes movingeyes2 {
+    0%{
+        left: 40vw ;
+    }
+    50%{
+      left: 46vw;
+    }
+    100%{
+      left: 40vw;
     }
   }
 }
