@@ -693,10 +693,34 @@ li::before {
   color: white;
 }
 
-@media screen and (min-width: 300px) and (max-width: 400px) {
+@media screen and (min-width: 300px) {
   body {
     width: 100vw;
+    height: 100vh;
     overflow-x: hidden;
+  }
+  .eyes {
+    width: 100vw;
+  }
+  .eye1 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: -2vw;
+    top: 5vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes 5s infinite;
+  }
+  .eye2 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 45vw;
+    top: 2.5vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes2 5s infinite;
   }
   .main-container {
     margin-left: 0;
@@ -801,7 +825,7 @@ li::before {
     height: 1vh;
   }
   .spinned {
-    margin-top: -11vh;
+    margin-top: -15vh;
     margin-bottom: 9vh;
   }
   .btn {
@@ -825,394 +849,21 @@ li::before {
   }
   @keyframes movingeyes {
     0% {
-      margin-left: 16vw;
+      left: -2vw;
     }
     50% {
-      margin-left: 18vw;
+      left: 4vw;
     }
   }
   @keyframes movingeyes2 {
     0% {
-      margin-left: 36vw;
+      left: 42vw;
     }
     50% {
-      margin-left: 34vw;
+      left: 50vw;
     }
     100% {
-      margin-left: 36vw;
+      left: 42vw;
     }
-  }
-}
-@media screen and (min-width: 400px) and (max-width: 500px) {
-  body {
-    width: 100vw;
-    overflow-x: hidden;
-  }
-  .main-container {
-    margin-left: 0;
-    width: 100vw;
-  }
-  .header-container {
-    width: 100vw;
-  }
-  .profile {
-    position: relative;
-    left: 0.5vw;
-    bottom: 0.2vh;
-    max-width: 200px;
-    max-height: 200px;
-  }
-  .circle {
-    position: absolute;
-    top: 19vh;
-  }
-  .title-container {
-    margin-top: 8vh;
-  }
-  .description {
-    margin-top: -2vh;
-  }
-  .description-second-line {
-    margin-top: 3vh;
-  }
-  .plane {
-    position: absolute;
-    margin-left: 6vw;
-    margin-top: 1vh;
-  }
-  .available {
-    width: 100px;
-    margin-top: 2.4vh;
-    margin-left: 13vw;
-    color: rgb(236, 206, 40);
-  }
-  #connected {
-    color: green;
-  }
-  .social {
-    position: absolute;
-    margin-top: -3.2vh;
-    margin-left: 40%;
-    color: rgba(236, 206, 40, 0.527);
-  }
-  .links {
-    margin-top: -3.4vh;
-    margin-left: 45vw;
-    color: rgba(236, 206, 40, 0.527);
-  }
-  .links:hover {
-    color: rgb(236, 206, 40);
-    cursor: pointer;
-  }
-  .birthday {
-    position: absolute;
-    margin-top: -3.4vh;
-    margin-left: 70vw;
-  }
-  .birth {
-    margin-top: -3.4vh;
-    margin-left: 75vw;
-    color: rgba(236, 206, 40, 0.527);
-  }
-  .contenido-tab {
-    margin-top: 3vh;
-    margin-left: 0vw;
-    width: 100vw;
-    height: 510vh;
-    background-color: rgb(236, 207, 40);
-  }
-  .dweet {
-    width: 90%;
-    height: 105vh;
-  }
-  .dwimg {
-    margin-left: 10vw;
-  }
-  .dweet-title {
-    margin-top: 3vh;
-    width: 90%;
-  }
-  .dweetp {
-    margin-top: 1vh;
-  }
-  .user-profile {
-    margin-left: 17vw;
-    margin-top: -6vh;
-  }
-  .tag {
-    width: 23vw;
-    height: 1vh;
-  }
-  .spinned {
-    margin-top: -10vh;
-    margin-bottom: 9vh;
-  }
-  .btn {
-    margin-left: 20vw;
-  }
-  li::before {
-    content: "•";
-    color: rgb(236, 207, 40);
-    font-weight: bold;
-    display: inline-block;
-    width: 1vw;
-    margin-bottom: -1vw;
-    margin-right: 3vw;
-  }
-  #all h4 {
-    margin-left: 10vw;
-  }
-  #all h5 {
-    margin-top: 2vh;
-    margin-left: 13vw;
-  }
-}
-@media screen and (min-width: 500px) and (max-width: 767px) {
-  body {
-    width: 100vw;
-    overflow-x: hidden;
-  }
-  .main-container {
-    margin-left: 0;
-    width: 100vw;
-  }
-  .header-container {
-    width: 100vw;
-  }
-  .profile {
-    position: relative;
-    left: 0.5vw;
-    bottom: 0.2vh;
-    max-width: 200px;
-    max-height: 200px;
-  }
-  .title-container {
-    margin-top: 5.5vh;
-  }
-  .description {
-    margin-top: -2vh;
-  }
-  .description-second-line {
-    margin-top: 3vh;
-  }
-  .plane {
-    margin-left: 6vw;
-    margin-top: -2vh;
-  }
-  .available {
-    width: 100px;
-    margin-top: -2vh;
-    margin-left: 13vw;
-    color: rgb(236, 206, 40);
-  }
-  #connected {
-    color: green;
-  }
-  .social {
-    position: absolute;
-    margin-top: -3.8vh;
-    margin-left: 40%;
-    color: rgba(236, 206, 40, 0.527);
-  }
-  .links {
-    margin-top: -3.9vh;
-    margin-left: 45vw;
-    color: rgba(236, 206, 40, 0.527);
-  }
-  .links:hover {
-    color: rgb(236, 206, 40);
-    cursor: pointer;
-  }
-  .birthday {
-    position: absolute;
-    margin-top: -4vh;
-    margin-left: 70vw;
-  }
-  .birth {
-    margin-top: -4vh;
-    margin-left: 75vw;
-    color: rgba(236, 206, 40, 0.527);
-  }
-  .contenido-tab {
-    margin-top: 3vh;
-    margin-left: 0vw;
-    width: 100vw;
-    height: 510vh;
-    background-color: rgb(236, 207, 40);
-  }
-  .dweet {
-    width: 90%;
-    height: 118vh;
-  }
-  .dwimg {
-    margin-left: 10vw;
-  }
-  .dweet-title {
-    margin-top: 3vh;
-    width: 90%;
-  }
-  .dweetp {
-    margin-top: 1vh;
-  }
-  .user-profile {
-    margin-left: 17vw;
-    margin-top: -6vh;
-  }
-  .tag {
-    width: 23vw;
-    height: 1vh;
-  }
-  .spinned {
-    margin-top: -11vh;
-    margin-bottom: 9vh;
-  }
-  .btn {
-    margin-left: 15vw;
-  }
-  li::before {
-    content: "•";
-    color: rgb(236, 207, 40);
-    font-weight: bold;
-    display: inline-block;
-    width: 1vw;
-    margin-bottom: -1vw;
-    margin-right: 3vw;
-  }
-  #all h4 {
-    margin-left: 4vw;
-  }
-  #all h5 {
-    margin-top: 2vh;
-    margin-left: 6vw;
-  }
-}
-@media screen and (min-width: 767px) and (max-width: 1000px) {
-  body {
-    width: 100vw;
-    overflow-x: hidden;
-  }
-  .main-container {
-    margin-left: 0;
-    width: 100vw;
-  }
-  .header-container {
-    width: 100vw;
-    height: 30vh;
-  }
-  .circle {
-    background-color: rgb(236, 207, 40);
-    position: absolute;
-    top: 7vh;
-  }
-  .profile {
-    position: relative;
-    left: 0.2vw;
-    bottom: 0.2vh;
-    max-width: 200px;
-    max-height: 200px;
-  }
-  .title-container {
-    margin-top: 6.5vh;
-  }
-  .description {
-    margin-top: -2vh;
-  }
-  .description-second-line {
-    margin-top: 3vh;
-  }
-  .plane {
-    position: relative;
-    top: -0.2vh;
-    left: 2vw;
-  }
-  .available {
-    width: 100px;
-    margin-top: -2vh;
-    margin-left: 13vw;
-    color: rgb(236, 206, 40);
-  }
-  #connected {
-    color: green;
-  }
-  .social {
-    position: absolute;
-    margin-top: -2.8vh;
-    margin-left: 40%;
-    color: rgba(236, 206, 40, 0.527);
-  }
-  .links {
-    margin-top: -2.8vh;
-    margin-left: 43vw;
-    color: rgba(236, 206, 40, 0.527);
-  }
-  .links:hover {
-    color: rgb(236, 206, 40);
-    cursor: pointer;
-  }
-  .birthday {
-    position: absolute;
-    margin-top: -2.8vh;
-    margin-left: 70vw;
-  }
-  .birth {
-    margin-top: -2.8vh;
-    margin-left: 75vw;
-    color: rgba(236, 206, 40, 0.527);
-  }
-  .tab {
-    margin-left: 15vw;
-  }
-  .contenido-tab {
-    margin-top: 2vh;
-    margin-left: 0vw;
-    width: 100vw;
-    height: 510vh;
-    background-color: rgb(236, 207, 40);
-  }
-  .dweet {
-    width: 90%;
-    height: 100vh;
-  }
-  .dwimg {
-    margin-left: 10vw;
-  }
-  .dweet-title {
-    margin-top: -1vh;
-    width: 90%;
-  }
-  .dweetp {
-    margin-top: 1vh;
-  }
-  .user-profile {
-    margin-left: 9vw;
-    margin-top: -6vh;
-  }
-  .tag {
-    margin-top: 3vh;
-    width: 12vw;
-    height: 1vh;
-  }
-  .spinned {
-    margin-top: -8vh;
-    margin-bottom: 9vh;
-  }
-  .btn {
-    margin-left: 28vw;
-  }
-  li::before {
-    content: "•";
-    color: rgb(236, 207, 40);
-    font-weight: bold;
-    display: inline-block;
-    width: 1vw;
-    margin-bottom: -1vw;
-    margin-right: 3vw;
-  }
-  #all h4 {
-    margin-left: 18vw;
-  }
-  #all h5 {
-    margin-top: 2vh;
-    margin-left: 20vw;
   }
 }/*# sourceMappingURL=App.css.map */
