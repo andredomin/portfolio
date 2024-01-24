@@ -68,9 +68,9 @@ h1{
 
 .main-container{
   background-color: $bg-color;
-  margin-left: 23vw;
+  margin-left: 25vw;
   margin-top: 5vh;
-  width: 53vw;
+  width: 100vw;
   height: 220vh;
 }
 
@@ -79,7 +79,7 @@ h1{
   background-image: url(/img/pikachu.png);
   background-position: center;
   margin-top: 5vh;
-  width: 53vw;
+  width: 50vw;
   height: 43vh;
 }
 
@@ -367,22 +367,26 @@ li::before{
 
 @keyframes movingeyes {
   0%{
-      margin-left: 16vw ;
+      margin-left: 17vw ;
   }
   50%{
-    margin-left: 18vw;
+    margin-left: 14vw;
+  }
+
+  100%{
+    margin-left: 17vw;
   }
 }
 
 @keyframes movingeyes2 {
   0%{
-      margin-left: 34vw ;
+      margin-left: 35vw ;
   }
   50%{
-    margin-left: 36vw;
+    margin-left: 32vw;
   }
   100%{
-    margin-left: 34vw;
+    margin-left: 35vw;
   }
 }
 
@@ -418,7 +422,227 @@ li::before{
 
 
 // Media queries
-@media screen and (min-width:300px) and (max-width: 380px) {
+
+@media screen and (min-width:200px) and (max-width: 300px) {
+  body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden
+  }
+
+  .eyes{
+    width: 100vw;
+  }
+
+  .eye1{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 6vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes 5s infinite;
+  }
+  
+  .eye2{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 45vw;
+    top: 3.5vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes2 5s infinite;
+  }
+
+  .main-container{
+    margin-left: 0;
+    width: 100vw;
+    margin-right: 0;
+  }
+  .header-container{
+    position: relative;
+    background-size: center;
+    width: 100vw;
+  }
+
+  .profile{
+    position: relative;
+    left: 0.5vw;
+    bottom: 0.20vh;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .circle{
+    position: absolute;
+    top: 15vh;
+  }
+
+  .title-container{
+    margin-top: 8vh;
+  }
+
+  .description{
+    margin-top: -2vh;
+  }
+  
+  .description-second-line{
+    margin-top: 3vh;
+  }
+
+  .plane{
+    position: absolute;
+    margin-left: 35vw;
+    margin-top: 3vh;
+  }
+  
+  .available{
+    width: 100px;
+    margin-top: 5vh;
+    margin-left: 45vw;
+    color:  rgb(236, 206, 40);
+  }
+  
+  #connected{
+    color: green;
+  }
+  
+  .social{
+    position: absolute;
+    margin-top: 4.5vh;
+    margin-left: 35%;
+    color:  rgba(236, 206, 40, 0.527);
+  }
+  
+  .links{
+    margin-top: 6.5vh;
+    margin-left: 45vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+       
+  }
+  
+  .links:hover{
+    color: rgb(236, 206, 40);
+    cursor: pointer;
+  }
+  
+  .birthday{
+    position: absolute;
+    margin-top: 4vh;
+    margin-left: 35vw;
+  }
+  
+  .birth{
+    margin-top: 6.5vh;
+    margin-left: 45vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+  
+  }
+
+  .tab-container{
+    margin-top: 6vh;
+    width: 70vw;
+  }
+
+  .tab{
+    font-size: 10px;
+    margin-left: 8vw;
+  }
+
+  .contenido-tab{
+    margin-top: 3vh;
+    margin-left: 0vw;
+    width: 100vw;
+    height: 510vh;
+    background-color: $primary-color;
+  }
+
+  .dweet{
+    width: 90%;
+    height: 145vh;
+  }
+
+  .dwimg{
+    margin-top: 6vh;
+    margin-left: 10vw;
+  }
+
+  .dweet-title{
+    margin-top: 3vh;
+    width: 90%;
+  }
+  .dweetp{
+    margin-top: 1vh;
+  }
+  .user-profile{
+    margin-left: 21vw;
+    margin-top: -6vh;
+
+  }
+
+  .tag{
+    width: 32vw;
+    height: 1vh;
+  }
+
+  .spinned{
+    margin-top: -15vh;
+    margin-bottom: 9vh;
+  }
+
+  .btn{
+    margin-top: -1vh;
+    margin-left: 10vw;
+  }
+
+  li::before{
+    content: "\2022";
+    color: $primary-color;
+    font-weight: bold;
+    display: inline-block;
+    width: 1vw;
+    margin-bottom: -1vw;
+    margin-right: 3vw;
+  }
+  #all h4{
+    margin-left: 0vw;
+  }
+  #all h5{
+    margin-top: 2vh;
+    margin-left: 2vw;
+
+  }
+
+  @keyframes movingeyes {
+    0%{
+        left: -18vw ;
+    }
+    50%{
+      left: -4vw;
+    }
+
+    100%{
+      left: -18vw;
+    }
+  }
+  
+  @keyframes movingeyes2 {
+    0%{
+        left: 52vw ;
+    }
+    50%{
+      left: 60vw;
+    }
+    100%{
+      left: 52vw;
+    }
+  }
+}
+
+@media screen and (min-width:300px) and (max-width: 320px) {
   body{
     width: 100vw;
     height: 100vh;
@@ -632,7 +856,220 @@ li::before{
   }
 }
 
-@media screen and (min-width:380px) and (max-width: 400px) {
+@media screen and (min-width:320px) and (max-width: 340px) {
+  body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden
+  }
+
+  .eyes{
+    width: 100vw;
+  }
+
+  .eye1{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 4vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes 5s infinite;
+  }
+  
+  .eye2{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 45vw;
+    top: 1vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes2 5s infinite;
+  }
+
+  .main-container{
+    margin-left: 0;
+    width: 100vw;
+  }
+  .header-container{
+      width: 100vw;
+  }
+
+  .profile{
+    position: relative;
+    left: 0.5vw;
+    bottom: 0.20vh;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .circle{
+    position: absolute;
+    top: 15vh;
+  }
+
+  .title-container{
+    margin-top: 22vh;
+  }
+
+  .description{
+    margin-top: -2vh;
+  }
+  
+  .description-second-line{
+    margin-top: 3vh;
+  }
+
+  .plane{
+    position: absolute;
+    margin-left: 6vw;
+    margin-top: 3vh;
+  }
+  
+  .available{
+    width: 100px;
+    margin-top: 5vh;
+    margin-left: 13vw;
+    color:  rgb(236, 206, 40);
+  }
+  
+  #connected{
+    color: green;
+  }
+  
+  .social{
+    position: absolute;
+    margin-top: -4.5vh;
+    margin-left: 40%;
+    color:  rgba(236, 206, 40, 0.527);
+  }
+  
+  .links{
+    margin-top: -4.75vh;
+    margin-left: 45vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+       
+  }
+  
+  .links:hover{
+    color: rgb(236, 206, 40);
+    cursor: pointer;
+  }
+  
+  .birthday{
+    position: absolute;
+    margin-top: -5vh;
+    margin-left: 70vw;
+  }
+  
+  .birth{
+    margin-top: -5vh;
+    margin-left: 75vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+  
+  }
+
+  .tab-container{
+    width: 100vw;
+  }
+
+  .tab{
+    font-size: 14px;
+    margin-left: 6vw;
+  }
+
+  .contenido-tab{
+    margin-top: 3vh;
+    margin-left: 0vw;
+    width: 100vw;
+    height: 600vh;
+    background-color: $primary-color;
+  }
+
+  .dweet{
+    width: 90%;
+    height: 165vh;
+  }
+
+  .dwimg{
+    margin-left: 10vw;
+  }
+
+  .dweet-title{
+    margin-top: 3vh;
+    width: 90%;
+  }
+  .dweetp{
+    margin-top: 1vh;
+  }
+  .user-profile{
+    margin-left: 20vw;
+    margin-top: -6vh;
+
+  }
+
+  .tag{
+    width: 26vw;
+    height: 1vh;
+  }
+
+  .spinned{
+    margin-top: -15vh;
+    margin-bottom: 9vh;
+  }
+
+  .btn{
+    margin-left: 15vw;
+  }
+
+  li::before{
+    content: "\2022";
+    color: $primary-color;
+    font-weight: bold;
+    display: inline-block;
+    width: 1vw;
+    margin-bottom: -1vw;
+    margin-right: 3vw;
+  }
+  #all h4{
+    margin-left: 4vw;
+  }
+  #all h5{
+    margin-top: 2vh;
+    margin-left: 6vw;
+
+  }
+
+  @keyframes movingeyes {
+    0%{
+        left: -10vw ;
+    }
+    50%{
+      left: 0vw;
+    }
+
+    100%{
+      left: -10vw;
+    }
+  }
+  
+  @keyframes movingeyes2 {
+    0%{
+        left: 44vw ;
+    }
+    50%{
+      left: 56vw;
+    }
+    100%{
+      left: 44vw;
+    }
+  }
+}
+
+@media screen and (min-width:340px) and (max-width: 360px) {
   body{
     width: 100vw;
     height: 100vh;
@@ -844,10 +1281,858 @@ li::before{
   }
 }
 
-@media screen and (min-width:400px) and (max-width: 500px) {
+@media screen and (min-width:360px) and (max-width: 375px) {
   body{
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden
+  }
+
+  .eyes{
+    width: 100vw;
+  }
+
+  .eye1{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 6vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes 5s infinite;
+  }
+  
+  .eye2{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 3.5vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes2 5s infinite;
+  }
+
+  .main-container{
+    margin-left: 0;
+    width: 100vw;
+  }
+  .header-container{
+      width: 100vw;
+  }
+
+  .profile{
+    position: relative;
+    left: 0.5vw;
+    bottom: 0.20vh;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .circle{
+    position: absolute;
+    top: 15vh;
+  }
+
+  .title-container{
+    margin-top: 8vh;
+  }
+
+  .description{
+    margin-top: -2vh;
+  }
+  
+  .description-second-line{
+    margin-top: 3vh;
+  }
+
+  .plane{
+    position: absolute;
+    margin-left: 6vw;
+    margin-top: 1vh;
+  }
+  
+  .available{
+    width: 100px;
+    margin-top: 3vh;
+    margin-left: 13vw;
+    color:  rgb(236, 206, 40);
+  }
+  
+  #connected{
+    color: green;
+  }
+  
+  .social{
+    position: absolute;
+    margin-top: -4.5vh;
+    margin-left: 40%;
+    color:  rgba(236, 206, 40, 0.527);
+  }
+  
+  .links{
+    margin-top: -4.5vh;
+    margin-left: 45vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+       
+  }
+  
+  .links:hover{
+    color: rgb(236, 206, 40);
+    cursor: pointer;
+  }
+  
+  .birthday{
+    position: absolute;
+    margin-top: -4vh;
+    margin-left: 70vw;
+  }
+  
+  .birth{
+    margin-top: -4vh;
+    margin-left: 75vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+  
+  }
+
+  .tab-container{
+    width: 100vw;
+  }
+
+  .tab{
+    font-size: 14px;
+    margin-left: 8vw;
+  }
+
+  .contenido-tab{
+    margin-top: 3vh;
+    margin-left: 0vw;
+    width: 100vw;
+    height: 450vh;
+    background-color: $primary-color;
+  }
+
+  .dweet{
+    width: 90%;
+    height: 120vh;
+  }
+
+  .dwimg{
+    margin-left: 10vw;
+  }
+
+  .dweet-title{
+    margin-top: 3vh;
+    width: 90%;
+  }
+  .dweetp{
+    margin-top: 1vh;
+  }
+  .user-profile{
+    margin-left: 17vw;
+    margin-top: -6vh;
+
+  }
+
+  .tag{
+    width: 24vw;
+    height: 1vh;
+  }
+
+  .spinned{
+    margin-top: -13vh;
+    margin-bottom: 9vh;
+  }
+
+  .btn{
+    margin-left: 15vw;
+  }
+
+  li::before{
+    content: "\2022";
+    color: $primary-color;
+    font-weight: bold;
+    display: inline-block;
+    width: 1vw;
+    margin-bottom: -1vw;
+    margin-right: 3vw;
+  }
+  #all h4{
+    margin-left: 4vw;
+  }
+  #all h5{
+    margin-top: 2vh;
+    margin-left: 6vw;
+
+  }
+
+  @keyframes movingeyes {
+    0%{
+        left: -4vw ;
+    }
+    50%{
+      left: 0vw;
+    }
+
+    100%{
+      left: -4vw;
+    }
+  }
+  
+  @keyframes movingeyes2 {
+    0%{
+        left: 44vw ;
+    }
+    50%{
+      left: 50vw;
+    }
+    100%{
+      left: 44vw;
+    }
+  }
+}
+
+
+@media screen and (min-width:375px) and (max-width: 414px) {
+  body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden
+  }
+
+  .eyes{
+    width: 100vw;
+  }
+
+  .eye1{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 9vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes 5s infinite;
+  }
+  
+  .eye2{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 7vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes2 5s infinite;
+  }
+
+  .main-container{
+    margin-left: 0;
+    width: 100vw;
+  }
+  .header-container{
+      width: 100vw;
+  }
+
+  .profile{
+    position: relative;
+    left: 0.5vw;
+    bottom: 0.20vh;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .circle{
+    position: absolute;
+    top: 15vh;
+  }
+
+  .title-container{
+    margin-top: 14vh;
+  }
+
+  .description{
+    margin-top: -2vh;
+  }
+  
+  .description-second-line{
+    margin-top: 3vh;
+  }
+
+  .plane{
+    position: absolute;
+    margin-left: 6vw;
+    margin-top: 1vh;
+  }
+  
+  .available{
+    width: 100px;
+    margin-top: 4vh;
+    margin-left: 13vw;
+    color:  rgb(236, 206, 40);
+  }
+  
+  #connected{
+    color: green;
+  }
+  
+  .social{
+    position: absolute;
+    margin-top: -4.5vh;
+    margin-left: 40%;
+    color:  rgba(236, 206, 40, 0.527);
+  }
+  
+  .links{
+    margin-top: -4.5vh;
+    margin-left: 45vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+       
+  }
+  
+  .links:hover{
+    color: rgb(236, 206, 40);
+    cursor: pointer;
+  }
+  
+  .birthday{
+    position: absolute;
+    margin-top: -5vh;
+    margin-left: 70vw;
+  }
+  
+  .birth{
+    margin-top: -5vh;
+    margin-left: 75vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+  
+  }
+
+  .tab-container{
+    width: 100vw;
+  }
+
+  .tab{
+    font-size: 14px;
+    margin-left: 8vw;
+  }
+
+  .contenido-tab{
+    margin-top: 3vh;
+    margin-left: 0vw;
+    width: 100vw;
+    height: 430vh;
+    background-color: $primary-color;
+  }
+
+  .dweet{
+    width: 90%;
+    height: 105vh;
+  }
+
+  .dwimg{
+    margin-left: 10vw;
+  }
+
+  .dweet-title{
+    margin-top: 3vh;
+    width: 90%;
+  }
+  .dweetp{
+    margin-top: 1vh;
+  }
+  .user-profile{
+    margin-left: 17vw;
+    margin-top: -6vh;
+
+  }
+
+  .tag{
+    width: 24vw;
+    height: 1vh;
+  }
+
+  .spinned{
+    margin-top: -10vh;
+    margin-bottom: 9vh;
+  }
+
+  .btn{
+    margin-left: 15vw;
+  }
+
+  li::before{
+    content: "\2022";
+    color: $primary-color;
+    font-weight: bold;
+    display: inline-block;
+    width: 1vw;
+    margin-bottom: -1vw;
+    margin-right: 3vw;
+  }
+  #all h4{
+    margin-left: 4vw;
+  }
+  #all h5{
+    margin-top: 2vh;
+    margin-left: 6vw;
+
+  }
+
+  @keyframes movingeyes {
+    0%{
+        left: -1vw ;
+    }
+    50%{
+      left: 4vw;
+    }
+
+    100%{
+      left: -1vw;
+    }
+  }
+  
+  @keyframes movingeyes2 {
+    0%{
+        left: 40vw ;
+    }
+    50%{
+      left: 48vw;
+    }
+    100%{
+      left: 40vw;
+    }
+  }
+}
+
+@media screen and (min-width:415px) and (max-width: 430px) {
+  body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden
+  }
+
+  .eyes{
+    width: 100vw;
+  }
+
+  .eye1{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 4vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes 5s infinite;
+  }
+  
+  .eye2{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 0.75vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes2 5s infinite;
+  }
+
+  .main-container{
+    margin-left: 0;
+    width: 100vw;
+  }
+  .header-container{
+      width: 100vw;
+  }
+
+  .profile{
+    position: relative;
+    left: 0.5vw;
+    bottom: 0.20vh;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .circle{
+    position: absolute;
+    top: 15vh;
+  }
+
+  .title-container{
+    margin-top: 14vh;
+  }
+
+  .description{
+    margin-top: -2vh;
+  }
+  
+  .description-second-line{
+    margin-top: 3vh;
+  }
+
+  .plane{
+    position: absolute;
+    margin-left: 6vw;
+    margin-top: 1vh;
+  }
+  
+  .available{
+    width: 100px;
+    margin-top: 4vh;
+    margin-left: 13vw;
+    color:  rgb(236, 206, 40);
+  }
+  
+  #connected{
+    color: green;
+  }
+  
+  .social{
+    position: absolute;
+    margin-top: -4.5vh;
+    margin-left: 40%;
+    color:  rgba(236, 206, 40, 0.527);
+  }
+  
+  .links{
+    margin-top: -4.5vh;
+    margin-left: 45vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+       
+  }
+  
+  .links:hover{
+    color: rgb(236, 206, 40);
+    cursor: pointer;
+  }
+  
+  .birthday{
+    position: absolute;
+    margin-top: -5vh;
+    margin-left: 70vw;
+  }
+  
+  .birth{
+    margin-top: -5vh;
+    margin-left: 75vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+  
+  }
+
+  .tab-container{
+    width: 100vw;
+  }
+
+  .tab{
+    font-size: 14px;
+    margin-left: 10vw;
+  }
+
+  .contenido-tab{
+    margin-top: 3vh;
+    margin-left: 0vw;
+    width: 100vw;
+    height: 480vh;
+    background-color: $primary-color;
+  }
+
+  .dweet{
+    width: 90%;
+    height: 135vh;
+  }
+
+  .dwimg{
+    margin-left: 10vw;
+  }
+
+  .dweet-title{
+    margin-top: 3vh;
+    width: 90%;
+  }
+  .dweetp{
+    margin-top: 1vh;
+  }
+  .user-profile{
+    margin-left: 17vw;
+    margin-top: -6vh;
+
+  }
+
+  .tag{
+    width: 24vw;
+    height: 1vh;
+  }
+
+  .spinned{
+    margin-top: -15vh;
+    margin-bottom: 9vh;
+  }
+
+  .btn{
+    margin-left: 18vw;
+  }
+
+  li::before{
+    content: "\2022";
+    color: $primary-color;
+    font-weight: bold;
+    display: inline-block;
+    width: 1vw;
+    margin-bottom: -1vw;
+    margin-right: 3vw;
+  }
+  #all h4{
+    margin-left: 12vw;
+  }
+  #all h5{
+    margin-top: 2vh;
+    margin-left: 14vw;
+
+  }
+
+  @keyframes movingeyes {
+    0%{
+        left: -1vw ;
+    }
+    50%{
+      left: 8vw;
+    }
+
+    100%{
+      left: -1vw;
+    }
+  }
+  
+  @keyframes movingeyes2 {
+    0%{
+        left: 40vw ;
+    }
+    50%{
+      left: 46vw;
+    }
+    100%{
+      left: 40vw;
+    }
+  }
+}
+
+@media screen and (min-width:430px) and (max-width: 500px) {
+  body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden
+  }
+
+  .eyes{
+    width: 100vw;
+  }
+
+  .eye1{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 10vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes 5s infinite;
+  }
+  
+  .eye2{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 8vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes2 5s infinite;
+  }
+
+  .main-container{
+    margin-left: 0;
+    width: 100vw;
+  }
+  .header-container{
+      width: 100vw;
+  }
+
+  .profile{
+    position: relative;
+    left: 0.5vw;
+    bottom: 0.20vh;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .circle{
+    position: absolute;
+    top: 15vh;
+  }
+
+  .title-container{
+    margin-top: 14vh;
+  }
+
+  .description{
+    margin-top: -2vh;
+  }
+  
+  .description-second-line{
+    margin-top: 3vh;
+  }
+
+  .plane{
+    position: absolute;
+    margin-left: 6vw;
+    margin-top: 1vh;
+  }
+  
+  .available{
+    width: 100px;
+    margin-top: 4vh;
+    margin-left: 13vw;
+    color:  rgb(236, 206, 40);
+  }
+  
+  #connected{
+    color: green;
+  }
+  
+  .social{
+    position: absolute;
+    margin-top: -6.5vh;
+    margin-left: 40%;
+    color:  rgba(236, 206, 40, 0.527);
+  }
+  
+  .links{
+    margin-top: -6.5vh;
+    margin-left: 45vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+       
+  }
+  
+  .links:hover{
+    color: rgb(236, 206, 40);
+    cursor: pointer;
+  }
+  
+  .birthday{
+    position: absolute;
+    margin-top: -6vh;
+    margin-left: 70vw;
+  }
+  
+  .birth{
+    margin-top: -6vh;
+    margin-left: 75vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+  
+  }
+
+  .tab-container{
+    width: 100vw;
+  }
+
+  .tab{
+    font-size: 14px;
+    margin-left: 8vw;
+  }
+
+  .contenido-tab{
+    margin-top: 3vh;
+    margin-left: 0vw;
+    width: 100vw;
+    height: 450vh;
+    background-color: $primary-color;
+  }
+
+  .dweet{
+    width: 90%;
+    height: 110vh;
+  }
+
+  .dwimg{
+    margin-left: 10vw;
+  }
+
+  .dweet-title{
+    margin-top: 13vh;
+    width: 90%;
+  }
+  .dweetp{
+    margin-top: 1vh;
+  }
+  .user-profile{
+    margin-left: 17vw;
+    margin-top: -6vh;
+
+  }
+
+  .tag{
+    width: 24vw;
+    height: 1vh;
+  }
+
+  .spinned{
+    margin-top: -20vh;
+    margin-bottom: 9vh;
+  }
+
+  .btn{
+    margin-left: 15vw;
+  }
+
+  li::before{
+    content: "\2022";
+    color: $primary-color;
+    font-weight: bold;
+    display: inline-block;
+    width: 1vw;
+    margin-bottom: -1vw;
+    margin-right: 3vw;
+  }
+  #all h4{
+    margin-left: 4vw;
+  }
+  #all h5{
+    margin-top: 2vh;
+    margin-left: 6vw;
+
+  }
+
+  @keyframes movingeyes {
+    0%{
+        left: 0vw ;
+    }
+    50%{
+      left: 6vw;
+    }
+
+    100%{
+      left: 0vw;
+    }
+  }
+  
+  @keyframes movingeyes2 {
+    0%{
+        left: 38vw ;
+    }
+    50%{
+      left: 46vw;
+    }
+    100%{
+      left: 38vw;
+    }
+  }
+}
+
+@media screen and (min-width:500px) and (max-width: 520px) {
+  body{
+    width: 100vw;
     overflow-x: hidden
   }
 
@@ -973,7 +2258,7 @@ li::before{
     margin-top: 3vh;
     margin-left: 0vw;
     width: 100vw;
-    height: 510vh;
+    height: 430vh;
     background-color: $primary-color;
   }
 
@@ -1055,4 +2340,1095 @@ li::before{
       left: 40vw;
     }
   }
+}
+
+@media screen and (min-width:500px) and (max-width: 750px) {
+  body{
+    width: 100vw;
+    overflow-x: hidden
+  }
+
+  .eyes{
+    width: 100vw;
+  }
+
+  .eye1{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 11vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes 5s infinite;
+  }
+  
+  .eye2{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 9vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes2 5s infinite;
+  }
+
+  .main-container{
+    margin-left: 0;
+    width: 100vw;
+  }
+  .header-container{
+      width: 100vw;
+  }
+
+  .profile{
+    position: relative;
+    left: 0.5vw;
+    bottom: 0.20vh;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .circle{
+    position: absolute;
+    top: 15vh;
+  }
+
+  .title-container{
+    margin-top: 8vh;
+  }
+
+  .description{
+    margin-top: -2vh;
+  }
+  
+  .description-second-line{
+    margin-top: 3vh;
+  }
+
+  .plane{
+    position: absolute;
+    margin-left: 6vw;
+    margin-top: 1vh;
+  }
+  
+  .available{
+    width: 100px;
+    margin-top: 3vh;
+    margin-left: 13vw;
+    color:  rgb(236, 206, 40);
+  }
+  
+  #connected{
+    color: green;
+  }
+  
+  .social{
+    position: absolute;
+    margin-top: -4.5vh;
+    margin-left: 40%;
+    color:  rgba(236, 206, 40, 0.527);
+  }
+  
+  .links{
+    margin-top: -4.5vh;
+    margin-left: 45vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+       
+  }
+  
+  .links:hover{
+    color: rgb(236, 206, 40);
+    cursor: pointer;
+  }
+  
+  .birthday{
+    position: absolute;
+    margin-top: -4vh;
+    margin-left: 70vw;
+  }
+  
+  .birth{
+    margin-top: -4vh;
+    margin-left: 75vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+  
+  }
+
+  .tab-container{
+    width: 100vw;
+  }
+
+  .tab{
+    font-size: 14px;
+    margin-left: 16vw;
+  }
+
+  .contenido-tab{
+    margin-top: 3vh;
+    margin-left: 0vw;
+    width: 100vw;
+    height: 380vh;
+    background-color: $primary-color;
+  }
+
+  .dweet{
+    width: 90%;
+    height: 100vh;
+  }
+
+  .dwimg{
+    margin-left: 10vw;
+  }
+
+  .dweet-title{
+    margin-top: 4vh;
+    width: 90%;
+  }
+  .dweetp{
+    margin-top: 1vh;
+  }
+  .user-profile{
+    margin-left: 10vw;
+    margin-top: -6vh;
+
+  }
+
+  .tag{
+    width: 24vw;
+    height: 1vh;
+  }
+
+  .spinned{
+    margin-top: -9vh;
+    margin-bottom: 9vh;
+  }
+
+  .btn{
+    margin-left: 30vw;
+  }
+
+  li::before{
+    content: "\2022";
+    color: $primary-color;
+    font-weight: bold;
+    display: inline-block;
+    width: 1vw;
+    margin-bottom: -1vw;
+    margin-right: 3vw;
+  }
+  #all h4{
+    margin-left: 18vw;
+  }
+  #all h5{
+    margin-top: 2vh;
+    margin-left: 20vw;
+
+  }
+
+  @keyframes movingeyes {
+    0%{
+        left: 16vw ;
+    }
+    50%{
+      left: 19vw;
+    }
+
+    100%{
+      left: 16vw;
+    }
+  }
+  
+  @keyframes movingeyes2 {
+    0%{
+        left: 30vw ;
+    }
+    50%{
+      left: 32vw;
+    }
+    100%{
+      left: 30vw;
+    }
+  }
+}
+
+@media screen and (min-width:750px) and (max-width: 768px) {
+  body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden
+  }
+
+  .eyes{
+    width: 100vw;
+  }
+
+  .eye1{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 1vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes 5s infinite;
+  }
+  
+  .eye2{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: -2.5vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes2 5s infinite;
+  }
+
+  .main-container{
+    margin-left: 0;
+    width: 100vw;
+  }
+  .header-container{
+      width: 100vw;
+  }
+
+  .profile{
+    position: relative;
+    left: 0vw;
+    bottom: 0.20vh;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .circle{
+    position: absolute;
+    top: 15vh;
+  }
+
+  .title-container{
+    margin-top: 14vh;
+  }
+
+  .description{
+    margin-top: -2vh;
+  }
+  
+  .description-second-line{
+    margin-top: 3vh;
+  }
+
+  .plane{
+    position: absolute;
+    margin-left: 6vw;
+    margin-top: 1vh;
+  }
+  
+  .available{
+    width: 100px;
+    margin-top: 4vh;
+    margin-left: 13vw;
+    color:  rgb(236, 206, 40);
+  }
+  
+  #connected{
+    color: green;
+  }
+  
+  .social{
+    position: absolute;
+    margin-top: -6.5vh;
+    margin-left: 40%;
+    color:  rgba(236, 206, 40, 0.527);
+  }
+  
+  .links{
+    margin-top: -6.5vh;
+    margin-left: 45vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+       
+  }
+  
+  .links:hover{
+    color: rgb(236, 206, 40);
+    cursor: pointer;
+  }
+  
+  .birthday{
+    position: absolute;
+    margin-top: -6vh;
+    margin-left: 70vw;
+  }
+  
+  .birth{
+    margin-top: -6vh;
+    margin-left: 75vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+  
+  }
+
+  .tab-container{
+    width: 100vw;
+  }
+
+  .tab{
+    font-size: 14px;
+    margin-left: 14vw;
+  }
+
+  .contenido-tab{
+    margin-top: 3vh;
+    margin-left: 0vw;
+    width: 100vw;
+    height: 650vh;
+    background-color: $primary-color;
+  }
+
+  .dweet{
+    width: 90%;
+    height: 180vh;
+  }
+
+  .dwimg{
+    margin-left: 10vw;
+  }
+
+  .dweet-title{
+    margin-top: 3vh;
+    width: 90%;
+  }
+  .dweetp{
+    margin-top: 1vh;
+  }
+  .user-profile{
+    margin-left: 17vw;
+    margin-top: -6vh;
+
+  }
+
+  .tag{
+    width: 24vw;
+    height: 1vh;
+  }
+
+  .spinned{
+    margin-top: -20vh;
+    margin-bottom: 9vh;
+  }
+
+  .btn{
+    margin-left: 30vw;
+  }
+
+  li::before{
+    content: "\2022";
+    color: $primary-color;
+    font-weight: bold;
+    display: inline-block;
+    width: 1vw;
+    margin-bottom: -1vw;
+    margin-right: 3vw;
+  }
+  #all h4{
+    margin-left: 20vw;
+  }
+  #all h5{
+    margin-top: 2vh;
+    margin-left: 22vw;
+
+  }
+
+  @keyframes movingeyes {
+    0%{
+        left: 20vw ;
+    }
+    50%{
+      left: 16vw;
+    }
+
+    100%{
+      left: 20vw;
+    }
+  }
+  
+  @keyframes movingeyes2 {
+    0%{
+        left: 32vw ;
+    }
+    50%{
+      left: 28vw;
+    }
+    100%{
+      left: 32vw;
+    }
+  }
+}
+
+
+@media screen and (min-width:768px) and (max-width: 800px) {
+  body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden
+  }
+
+  .eyes{
+    width: 100vw;
+  }
+
+  .eye1{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 11vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes 5s infinite;
+  }
+  
+  .eye2{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 9vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes2 5s infinite;
+  }
+
+  .main-container{
+    margin-left: 0;
+    width: 100vw;
+  }
+  .header-container{
+      width: 100vw;
+  }
+
+  .profile{
+    position: relative;
+    left: 0vw;
+    bottom: 0.20vh;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .circle{
+    position: absolute;
+    top: 20vh;
+  }
+
+  .title-container{
+    margin-top: 8vh;
+  }
+
+  .description{
+    margin-top: -2vh;
+  }
+  
+  .description-second-line{
+    margin-top: 3vh;
+  }
+
+  .plane{
+    position: absolute;
+    margin-left: 6vw;
+    margin-top: 2.5vh;
+  }
+  
+  .available{
+    width: 100px;
+    margin-top: 4vh;
+    margin-left: 13vw;
+    color:  rgb(236, 206, 40);
+  }
+  
+  #connected{
+    color: green;
+  }
+  
+  .social{
+    position: absolute;
+    margin-top: -3vh;
+    margin-left: 40%;
+    color:  rgba(236, 206, 40, 0.527);
+  }
+  
+  .links{
+    margin-top: -3vh;
+    margin-left: 45vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+       
+  }
+  
+  .links:hover{
+    color: rgb(236, 206, 40);
+    cursor: pointer;
+  }
+  
+  .birthday{
+    position: absolute;
+    margin-top: -3vh;
+    margin-left: 70vw;
+  }
+  
+  .birth{
+    margin-top: -3vh;
+    margin-left: 75vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+  
+  }
+
+  .tab-container{
+    width: 100vw;
+  }
+
+  .tab{
+    font-size: 14px;
+    margin-left: 14vw;
+  }
+
+  .contenido-tab{
+    margin-top: 3vh;
+    margin-left: 0vw;
+    width: 100vw;
+    height: 450vh;
+    background-color: $primary-color;
+  }
+
+  .dweet{
+    width: 90%;
+    height: 110vh;
+  }
+
+  .dwimg{
+    margin-left: 10vw;
+  }
+
+  .dweet-title{
+    margin-top: 13vh;
+    width: 90%;
+  }
+  .dweetp{
+    margin-top: 1vh;
+  }
+  .user-profile{
+    margin-left: 10vw;
+    margin-top: -6vh;
+
+  }
+
+  .tag{
+    width: 24vw;
+    height: 1vh;
+  }
+
+  .spinned{
+    margin-top: -20vh;
+    margin-bottom: 9vh;
+  }
+
+  .btn{
+    margin-left: 30vw;
+  }
+
+  li::before{
+    content: "\2022";
+    color: $primary-color;
+    font-weight: bold;
+    display: inline-block;
+    width: 1vw;
+    margin-bottom: -1vw;
+    margin-right: 3vw;
+  }
+  #all h4{
+    margin-left: 20vw;
+  }
+  #all h5{
+    margin-top: 2vh;
+    margin-left: 22vw;
+
+  }
+
+  @keyframes movingeyes {
+    0%{
+        left: 20vw ;
+    }
+    50%{
+      left: 16vw;
+    }
+
+    100%{
+      left: 20vw;
+    }
+  }
+  
+  @keyframes movingeyes2 {
+    0%{
+        left: 32vw ;
+    }
+    50%{
+      left: 29vw;
+    }
+    100%{
+      left: 32vw;
+    }
+  }
+}
+
+@media screen and (min-width:800px) and (max-width: 1024px) {
+  body{
+    width: 100vw;
+    overflow-x: hidden
+  }
+
+  .eyes{
+    width: 100vw;
+  }
+
+  .eye1{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 12.5vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes 5s infinite;
+  }
+  
+  .eye2{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 11vh;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes2 5s infinite;
+  }
+
+  .main-container{
+    margin-left: 0;
+    width: 100vw;
+  }
+  .header-container{
+      width: 100vw;
+  }
+
+  .profile{
+    position: relative;
+    left: 0.5vw;
+    bottom: 0.20vh;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .circle{
+    position: absolute;
+    top: 15vh;
+  }
+
+  .title-container{
+    margin-top: 8vh;
+  }
+
+  .description{
+    margin-top: -2vh;
+  }
+  
+  .description-second-line{
+    margin-top: 3vh;
+  }
+
+  .plane{
+    position: absolute;
+    margin-left: 6vw;
+    margin-top: 2vh;
+  }
+  
+  .available{
+    width: 100px;
+    margin-top: 3.25vh;
+    margin-left: 13vw;
+    color:  rgb(236, 206, 40);
+  }
+  
+  #connected{
+    color: green;
+  }
+  
+  .social{
+    position: absolute;
+    margin-top: -2.5vh;
+    margin-left: 40%;
+    color:  rgba(236, 206, 40, 0.527);
+  }
+  
+  .links{
+    margin-top: -2.5vh;
+    margin-left: 45vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+       
+  }
+  
+  .links:hover{
+    color: rgb(236, 206, 40);
+    cursor: pointer;
+  }
+  
+  .birthday{
+    position: absolute;
+    margin-top: -3vh;
+    margin-left: 70vw;
+  }
+  
+  .birth{
+    margin-top: -3vh;
+    margin-left: 75vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+  
+  }
+
+  .tab-container{
+    width: 100vw;
+  }
+
+  .tab{
+    font-size: 14px;
+    margin-left: 16vw;
+  }
+
+  .contenido-tab{
+    margin-top: 3vh;
+    margin-left: 0vw;
+    width: 100vw;
+    height: 380vh;
+    background-color: $primary-color;
+  }
+
+  .dweet{
+    width: 90%;
+    height: 100vh;
+  }
+
+  .dwimg{
+    margin-left: 10vw;
+  }
+
+  .dweet-title{
+    margin-top: 0vh;
+    width: 90%;
+  }
+  .dweetp{
+    margin-top: 1vh;
+  }
+  .user-profile{
+    margin-left: 10vw;
+    margin-top: -6vh;
+
+  }
+
+  .tag{
+    margin-top: 4vh;
+    width: 24vw;
+    height: 1vh;
+  }
+
+  .spinned{
+    margin-top: -9vh;
+    margin-bottom: 9vh;
+  }
+
+  .btn{
+    margin-left: 30vw;
+  }
+
+  li::before{
+    content: "\2022";
+    color: $primary-color;
+    font-weight: bold;
+    display: inline-block;
+    width: 1vw;
+    margin-bottom: -1vw;
+    margin-right: 3vw;
+  }
+  #all h4{
+    margin-left: 18vw;
+  }
+  #all h5{
+    margin-top: 2vh;
+    margin-left: 20vw;
+
+  }
+
+  @keyframes movingeyes {
+    0%{
+        left: 17vw ;
+    }
+    50%{
+      left: 20vw;
+    }
+
+    100%{
+      left: 17vw;
+    }
+  }
+  
+  @keyframes movingeyes2 {
+    0%{
+        left: 28vw ;
+    }
+    50%{
+      left: 31vw;
+    }
+    100%{
+      left: 28vw;
+    }
+  }
+}
+
+
+@media screen and (min-width:1024px) and (max-width: 1280px) {
+ 
+ 
+  body{
+    width: 100vw;
+    overflow-x: hidden
+  }
+
+
+  .navbar{
+    height: 136.59px;
+  }
+  
+  .container{
+    height: 3005.19px;
+  }
+
+  .eye1{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 100px;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes 5s infinite;
+  }
+  
+  .eye2{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 80px;
+    border-radius: 50%;
+    background-color: white;
+    animation: movingeyes2 5s infinite;
+  }
+
+  .main-container{
+    margin-left: 0;
+    width: 100vw;
+  }
+  .header-container{
+      width: 100vw;
+      height: 546px;
+      .eyes{
+        position: relative;
+        width: 100vw;
+        top: 60px;
+      }
+  }
+
+  .profile{
+    position: relative;
+    left: 0vw;
+    bottom: 0.20vh;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .circle{
+    position: absolute;
+    top: 20vh;
+    left: 0vw;
+  }
+
+  .title-container{
+    margin-top: 8vh;
+  }
+
+  .description{
+    margin-top: -2vh;
+  }
+  
+  .description-second-line{
+    margin-top: 3vh;
+  }
+
+  .plane{
+    position: absolute;
+    margin-left: 6vw;
+    margin-top: 2vh;
+  }
+  
+  .available{
+    width: 100px;
+    margin-top: 3.25vh;
+    margin-left: 13vw;
+    color:  rgb(236, 206, 40);
+  }
+  
+  #connected{
+    color: green;
+  }
+  
+  .social{
+    position: absolute;
+    margin-top: -2.5vh;
+    margin-left: 40%;
+    color:  rgba(236, 206, 40, 0.527);
+  }
+  
+  .links{
+    margin-top: -2.5vh;
+    margin-left: 45vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+       
+  }
+  
+  .links:hover{
+    color: rgb(236, 206, 40);
+    cursor: pointer;
+  }
+  
+  .birthday{
+    position: absolute;
+    margin-top: -3vh;
+    margin-left: 70vw;
+  }
+  
+  .birth{
+    margin-top: -3vh;
+    margin-left: 75vw;
+    color:  rgba(236, 206, 40, 0.527);
+  
+  
+  }
+
+  .tab-container{
+    width: 100vw;
+  }
+
+  .tab{
+    font-size: 14px;
+    margin-left: 16vw;
+  }
+
+  .contenido-tab{
+    margin-top: 3vh;
+    margin-left: 0vw;
+    width: 100vw;
+    height: 380vh;
+    background-color: $primary-color;
+  }
+
+  .dweet{
+    width: 90%;
+    height: 100vh;
+  }
+
+  .dwimg{
+    margin-left: 10vw;
+  }
+
+  .dweet-title{
+    margin-top: 0vh;
+    width: 90%;
+  }
+  .dweetp{
+    margin-top: 1vh;
+  }
+  .user-profile{
+    margin-left: 10vw;
+    margin-top: -6vh;
+
+  }
+
+  .tag{
+    margin-top: 4vh;
+    width: 24vw;
+    height: 1vh;
+  }
+
+  .spinned{
+    margin-top: -9vh;
+    margin-bottom: 9vh;
+  }
+
+  .btn{
+    margin-left: 30vw;
+  }
+
+  li::before{
+    content: "\2022";
+    color: $primary-color;
+    font-weight: bold;
+    display: inline-block;
+    width: 1vw;
+    margin-bottom: -1vw;
+    margin-right: 3vw;
+  }
+  #all h4{
+    margin-left: 18vw;
+  }
+  #all h5{
+    margin-top: 2vh;
+    margin-left: 20vw;
+
+  }
+
+  @keyframes movingeyes {
+    0%{
+        left: 20vw ;
+    }
+    50%{
+      left: 23vw;
+    }
+
+    100%{
+      left: 20vw;
+    }
+  }
+  
+  @keyframes movingeyes2 {
+    0%{
+        left: 25vw ;
+    }
+    50%{
+      left: 28vw;
+    }
+    100%{
+      left: 25vw;
+    }
+  }
+}
+
+@media screen and (min-width:1280px) and (max-width: 1440px){
+
+  @keyframes movingeyes2 {
+    0%{
+        left: 0 ;
+    }
+    50%{
+      left: -2vw;
+    }
+    100%{
+      left: 0vw;
+    }
+  }
+
 }
