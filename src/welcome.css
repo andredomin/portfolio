@@ -442,6 +442,7 @@ template {
     display: none;
   }
   .line-1-res {
+    display: block !important;
     overflow: hidden;
     white-space: nowrap;
     animation: blinking-first 0.75s steps(40, end);
