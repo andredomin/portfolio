@@ -10,7 +10,7 @@
 .portfolio{
     font-family: 'Pokemon_GB';
     margin-left: 30vw;
-    margin-top: 50vh;
+    margin-top: 40vh;
 }
 
 .portfolio a{
@@ -47,9 +47,13 @@
     font-weight: 100;
     overflow: hidden;
     white-space: nowrap;
-    margin-left: 20vw;
+    margin-left: 30vw;
     margin-top: 20vh;
     animation: blinking 2.5s steps(20,end)
+}
+
+.line-1-res{
+    display: none;
 }
 
 .line-2, .line-3{
@@ -101,115 +105,162 @@
 
 
 @media screen and (max-width: 650px) {
-    body {
+    
+    #global{
         overflow: hidden;
         width: 100vw;
+        height: 80vh;
     }
-    
 
     .portfolio{
-        margin-left: 20vw;
+        font-size: 8px;
+        margin-top: 50vh;
+        margin-left: 12vw;
+        width: 100vw;
+    }
+
+    .portfolio a{
+        width: 100vw;
+    }
+
+    #lines{
+        margin-top: 20vh
     }
 
     .line-1 h1 {
         overflow: hidden;
         white-space: nowrap;
-        font-size: 25px;
-        width: 97vw;
     }
 
-    .line-2,
-    .line-3 {
+    .line-2 {
+        position: relative;
+        width: 100vw;
+        left: 20vw;
         display: block;
-        color: white;
         font-family: 'Pokemon_GB';
         font-size: 10px;
         font-weight: 100;
         overflow: hidden;
         white-space: nowrap;
-        
         margin-top: 2vh;
         
     }
 
+    .line-3{
+        font-family: 'Pokemon_GB';
+        position: relative;
+        display: block;
+        width: 100vw;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
     .line-1{
-        animation: blinking .75s steps(40,end);
+        display: none;
+    }
+
+    .line-1-res{
+        
+        overflow: hidden;
+        white-space: nowrap;
+        animation: blinking-first .75s steps(40,end);
+        width: 100vw;
+        margin-left: 20vw;
+    }
+
+    .line-1-res h1{
+        font-family: 'Pokemon_GB';
+        color: white;
+        font-size: 15px;
+        width: 3vw;
     }
     .line-2{
-        animation: blinking 3.5s steps(40,end)
+        animation: blinking 4s steps(40,end)
     }
 
     .line-3{
-        animation: blinking 4.5s steps(50,end)
+        animation: blinking 5s steps(40,end);
+        
     }
 
     .line-2 h1{
-        color: white;
-        margin-left: 25vw;
-        font-size: 14px;
+        color: red;
+        font-size: 10px;
     }
 
     .line-3 h1{
         color: white;
-        margin-left: 25vw;
-        font-size: 17px;
+        margin-left: 20vw;
+        font-size: 10px;
     }
     .gif {
+        width: 100%;
+        left: 130vw;
         height: 33vh;
         position: relative;
-        margin-top: 6vh;
-        margin-left: 4vw;
         animation: gif-anim 6s forwards;
+        
     }
     .gifcontainer{
         position: absolute;
+        top: 62vh;
+        left: 0vw;
         overflow: hidden;
+        width: 100vw;
+        
     }
 
     .charizard {
-        width: 100%;
-        height: 23vh;
+        width: 100vw;
+        height: 100%;
         position: relative;
-        margin-top: 2vh;
-        margin-right: 25vw;
         animation: gif-anim2 15s forwards;
     }
 
     .charizard-container{
-        width: 100%;
-        margin-left: 15vw ;
+        top: 40vh;
+        width: 100vw;
         position: absolute;
+        left: 0vw;
         overflow: hidden;
     }
 
+    @keyframes blinking-first {
+        from{
+            width: 0vw;
+        }
+        to{
+            width: 60vw;
+        }
+    }
 
     @keyframes blinking {
         from{
-            width: 0%;
+            width: 0vw;
         }
         to{
-            width: 100%;
+            width: 100vw;
         }
     }
     @keyframes gif-anim{
-        0%{
-            margin-left: 50vw;
+        10%{
+            left: 100vw;
             
         }
     
         100%{
-            margin-left: -90vw;
+            left: -150vw;
             
         }
     }
 
     @keyframes gif-anim2{
-        0%{
-            margin-left: 110vw;
+        from{
+            left: 100vw;
         }
     
-        100%{
-            margin-left: -100vw;
+        to{
+            left: -150vw;
             
         }
     }

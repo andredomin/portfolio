@@ -764,6 +764,13 @@ li::before {
     margin-left: 75vw;
     color: rgba(236, 206, 40, 0.527);
   }
+  .tab-container {
+    width: 100vw;
+  }
+  .tab {
+    font-size: 14px;
+    margin-left: 8vw;
+  }
   .contenido-tab {
     margin-top: 3vh;
     margin-left: 0vw;

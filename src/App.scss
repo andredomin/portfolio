@@ -426,7 +426,7 @@ li::before{
 
   .main-container{
     margin-left: 0;
-      width: 100vw;
+    width: 100vw;
   }
   .header-container{
       width: 100vw;
@@ -506,6 +506,15 @@ li::before{
     color:  rgba(236, 206, 40, 0.527);
   
   
+  }
+
+  .tab-container{
+    width: 100vw;
+  }
+
+  .tab{
+    font-size: 14px;
+    margin-left: 8vw;
   }
 
   .contenido-tab{
